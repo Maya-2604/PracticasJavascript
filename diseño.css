@@ -1,0 +1,148 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #ece4e4;
+    margin: 0;
+    padding: 20px;
+    color: #4a4a4a;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #9575cd;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-size: 3rem;
+    color: #4a4a4a;
+    background: linear-gradient(135deg, #81d4fa, #f8bbd0, #ede7f6);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #4a4a4a;
+    background: linear-gradient(90deg, #9575cd, #f48fb1, #81d4fa);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Formularios */
+form {
+    background: #ffffff;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(149, 117, 205, 0.2);
+    max-width: 600px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(149, 117, 205, 0.3);
+}
+
+input[type="text"], input[type="password"], input[type="date"], textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 20px 0;
+    border: 2px solid #c5c2c2;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    background-color: #f3e5f5;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, textarea:focus {
+    background-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 10px #81d4fa;
+}
+
+/* Botones */
+button {
+    background: linear-gradient(45deg, #9575cd, #f48fb1);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(149, 117, 205, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #81d4fa, #f48fb1);
+    box-shadow: 0 15px 30px rgba(129, 212, 250, 0.4);
+    transform: translateY(-5px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Divs de resultados */
+div[id^="resultado"] {
+    background-color: #f3e5f5;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    font-size: 1.2rem;
+    text-align: center;
+    color: #4a4a4a;
+    animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Checkbox personalizado */
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    form {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
